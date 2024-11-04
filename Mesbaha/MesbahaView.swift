@@ -21,8 +21,25 @@ struct ContentView: View {
                     count += 1
                     vibrate()
                 }
+            
             Text("\(count)")
                 .font(.largeTitle)
+                .padding(.bottom, 20)
+            
+            Button(action: {
+                count = 0
+            }) {
+                Text("Reset")
+                    .font(.headline)
+                    .foregroundColor(.brown)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.brown, lineWidth: 2)
+                    )
+            }
         }
         .padding()
     }
