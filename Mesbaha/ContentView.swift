@@ -6,16 +6,30 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
+    @State private var count = 0
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Circle()
+                .fill(Color.brown)
+                .frame(width: 300, height: 300)
+                .padding()
+                .onTapGesture {
+                    count += 1
+                    vibrate()
+                }
+            Text("\(count)")
+                .font(.largeTitle)
         }
         .padding()
+    }
+    
+    private func vibrate() {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.impactOccurred()
     }
 }
 
