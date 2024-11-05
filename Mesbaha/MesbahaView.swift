@@ -15,7 +15,7 @@ struct ContentView: View {
         VStack {
             Circle()
                 .fill(Color.brown)
-                .frame(width: 300, height: 300)
+                .frame(width: 301, height: 301)
                 .padding()
                 .onTapGesture {
                     count += 1
@@ -42,6 +42,7 @@ struct ContentView: View {
             }
         }
         .padding()
+        
     }
     
     private func vibrate() {
