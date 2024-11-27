@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		76582B732CD8668E002D90D9 /* Mesbaha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mesbaha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76582B732CD8668E002D90D9 /* Mesbaha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Mesbaha.app; path = "/Users/basantamin/Desktop/iOS-files/my-work/Mesbaha/build/Debug-iphoneos/Mesbaha.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				76582B752CD8668E002D90D9 /* Mesbaha */,
-				76582B742CD8668E002D90D9 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		76582B742CD8668E002D90D9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				76582B732CD8668E002D90D9 /* Mesbaha.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +86,7 @@
 			mainGroup = 76582B6A2CD8668E002D90D9;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 76582B742CD8668E002D90D9 /* Products */;
+			productRefGroup = 76582B6A2CD8668E002D90D9;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

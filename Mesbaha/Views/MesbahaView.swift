@@ -9,7 +9,11 @@ import SwiftUI
 import UIKit
 
 struct homeView: View {
-    @State private var count = 0
+    
+    @StateObject private var tasbihManager = TasbihManager()
+    @State private var countInput: String = ""
+    @FocusState private var isFocused: Bool
+    @State private var counter = 0
 
     var body: some View {
         VStack {
@@ -18,16 +22,16 @@ struct homeView: View {
                 .frame(width: 301, height: 301)
                 .padding()
                 .onTapGesture {
-                    count += 1
+                    counter += 1
                     vibrate()
                 }
             
-            Text("\(count)")
+            Text("\(counter)")
                 .font(.largeTitle)
                 .padding(.bottom, 20)
             
             Button(action: {
-                count = 0
+                counter = 0
             }) {
                 Text("Reset")
                     .font(.headline)
@@ -40,9 +44,13 @@ struct homeView: View {
                             .stroke(Color.brown, lineWidth: 2)
                     )
             }
+            .padding(.bottom, 20)
+            
+           
+            
         }
-        .padding()
-        
+       
+     
     }
     
     private func vibrate() {
